@@ -1,3 +1,4 @@
+import { FlatList } from "react-native";
 import { Pressable } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
@@ -16,7 +17,9 @@ const Untitled5 = () => {
         <Pressable>
           <View style={styles.WpHtBwuP}></View>
         </Pressable>
-      </ScrollView>
+      <FlatList style={styles.cZBtgUcF} renderItem={({
+        item
+      }) => <View style={styles.JabBpKNk}></View>} ItemSeparatorComponent={() => <View style={styles.idDMzXnI} />} data={[1, 2, 3]} keyExtractor={(item, index) => index}></FlatList></ScrollView>
     <View></View></SafeAreaView>;
 };
 
@@ -45,6 +48,20 @@ const styles = StyleSheet.create({
     borderColor: "#000000",
     borderWidth: 19,
     position: "absolute"
+  },
+  cZBtgUcF: {
+    position: "absolute",
+    width: 100,
+    height: 150
+  },
+  JabBpKNk: {
+    width: "100%",
+    height: 60,
+    backgroundColor: "#FFFFFF"
+  },
+  idDMzXnI: {
+    backgroundColor: "#000000",
+    height: 1
   }
 });
 export default Untitled5;
